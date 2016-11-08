@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="51i-rV-yD8">
+            <objects>
+                <viewController id="jmO-O9-fgL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uOo-DU-4ny"/>
+                        <viewControllerLayoutGuide type="bottom" id="cGo-Aw-IlO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iiU-wO-Syi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search by Patient ID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6k-G5-cyC">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="lQl-16-Po3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u1a-un-ZKs">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="U2u-H3-uJX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzT-9C-aMx">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Rb9-jq-SXp"/>
+                                    <constraint firstAttribute="width" constant="56" id="rAO-nR-aUl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Search "/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1E-Zp-zqy">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="s2s-WB-5X8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Filter by Department"/>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h2o-hv-mqX"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter by depatment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiN-Yz-PJ1">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="v9n-ll-R6G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="w6k-G5-cyC" firstAttribute="leading" secondItem="iiU-wO-Syi" secondAttribute="leadingMargin" constant="87" id="0tA-kf-itc"/>
+                            <constraint firstItem="h2o-hv-mqX" firstAttribute="leading" secondItem="iiU-wO-Syi" secondAttribute="leading" id="3Nv-m3-u3F"/>
+                            <constraint firstItem="u1a-un-ZKs" firstAttribute="centerX" secondItem="RzT-9C-aMx" secondAttribute="centerX" id="5OX-UK-PMN"/>
+                            <constraint firstItem="w6k-G5-cyC" firstAttribute="centerX" secondItem="h2o-hv-mqX" secondAttribute="centerX" id="5wj-VH-1Gr"/>
+                            <constraint firstItem="hiN-Yz-PJ1" firstAttribute="leading" secondItem="iiU-wO-Syi" secondAttribute="leadingMargin" constant="81" id="6vK-59-dgT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hiN-Yz-PJ1" secondAttribute="trailing" constant="68" id="Jdr-MR-IbF"/>
+                            <constraint firstItem="u1a-un-ZKs" firstAttribute="top" secondItem="w6k-G5-cyC" secondAttribute="bottom" constant="36" id="O30-id-4MD"/>
+                            <constraint firstItem="w6k-G5-cyC" firstAttribute="top" secondItem="uOo-DU-4ny" secondAttribute="bottom" constant="67" id="Q9i-k6-UeW"/>
+                            <constraint firstItem="hiN-Yz-PJ1" firstAttribute="centerX" secondItem="x1E-Zp-zqy" secondAttribute="centerX" id="UFZ-CR-E9O"/>
+                            <constraint firstAttribute="trailing" secondItem="h2o-hv-mqX" secondAttribute="trailing" id="Z4c-ip-I4i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="u1a-un-ZKs" secondAttribute="trailing" constant="29" id="ZjS-AP-jUl"/>
+                            <constraint firstItem="u1a-un-ZKs" firstAttribute="leading" secondItem="iiU-wO-Syi" secondAttribute="leadingMargin" constant="17" id="ct6-7S-PvS"/>
+                            <constraint firstItem="RzT-9C-aMx" firstAttribute="top" secondItem="u1a-un-ZKs" secondAttribute="bottom" constant="16" id="jcO-r8-1fm"/>
+                            <constraint firstItem="cGo-Aw-IlO" firstAttribute="top" secondItem="x1E-Zp-zqy" secondAttribute="bottom" constant="118" id="q80-QL-Axz"/>
+                            <constraint firstItem="x1E-Zp-zqy" firstAttribute="top" secondItem="h2o-hv-mqX" secondAttribute="bottom" constant="35" id="qxX-WK-JYC"/>
+                            <constraint firstItem="w6k-G5-cyC" firstAttribute="trailing" secondItem="x1E-Zp-zqy" secondAttribute="trailing" id="rkA-Lu-pgs"/>
+                            <constraint firstItem="h2o-hv-mqX" firstAttribute="top" secondItem="hiN-Yz-PJ1" secondAttribute="bottom" constant="18" id="ve9-5L-rtA"/>
+                            <constraint firstItem="hiN-Yz-PJ1" firstAttribute="top" secondItem="RzT-9C-aMx" secondAttribute="bottom" constant="69" id="yYA-V9-7rS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ur4-qm-Qc8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tqr-Tv-MTt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2509.5999999999999" y="-342.27886056971516"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ypw-AT-ZHg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eBc-bn-n8V" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3ws-pM-enj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jmO-O9-fgL" kind="relationship" relationship="rootViewController" id="aYk-uT-b4y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BFW-p8-yZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1570.4000000000001" y="-342.27886056971516"/>
+        </scene>
+    </scenes>
+</document>
